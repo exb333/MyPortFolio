@@ -1,0 +1,72 @@
+/*----------------------------------------------------------------------*/
+/* Big Tablets to 1200px (widths smaller than the 1140px row); */
+/*----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+}
+
+    .row, .mypic {  padding: 0 2%;  }
+
+}
+
+
+/*----------------------------------------------------------------------*/
+/* IPad and Portrait mode, Small tablet to Big Tablet: from 768px to 1023px; */
+/*----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1023px) {
+    body {  font-size: 20px;  }
+    section { padding: 60px 0; }
+    .name-button { width:35%; }
+    .btn-full:link, .btn-full:visited {    margin-left: 10%; }
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .btn-more:link, .btn-more:visited { 
+        margin-left: 10%;
+    }
+    
+    .box {
+        display: block;
+    }
+    
+    .box p {
+        margin-bottom: 20px;
+        margin-right:  90px;
+    }
+    
+    .project-photo {
+        height: 289px;
+        width: 500px;
+        margin:0;
+        padding: 0%;
+    }
+    
+    .span-1-of-3 { width: 55%;   }
+    
+    .qry { float: right;  overflow: hidden;}
+}
+
+
+
+/*----------------------------------------------------------------------*/
+/* Devices smaller than IPad - Small phones to Small Tablets: from 481 to 767 px */
+/*----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+    
+}
+
+
+
+
+/*----------------------------------------------------------------------*/
+/*Small Phones: from 0 to 480 px*/
+/*----------------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+    
+}
