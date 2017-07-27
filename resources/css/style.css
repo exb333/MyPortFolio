@@ -10,13 +10,15 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body{
     background-color: #fff;
     color: #343434;
     font-family: 'Roboto', 'Arial', sans-serif;;
     font-weight: 300;
     font-size: 22px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 /*----------------------------------------------------------------*/
@@ -253,10 +255,11 @@ header {
 }
 
 .project-photo {
-    height: 500px;
+    height: auto;
     margin:0;
     overflow: hidden;
     background-color: #000;
+    box-shadow: 10px 10px 5px #888888
 }
 
 .box img:hover {

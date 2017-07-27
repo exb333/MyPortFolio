@@ -30,27 +30,23 @@
         margin-left: 10%;
     }
     
-    .box {
-        display: block;
-    }
-    
     .box p {
         margin-bottom: 20px;
-        margin-right:  90px;
+        text-align: center;
     }
     
     .project-photo {
-        height: 289px;
-        width: 500px;
-        margin:0;
-        padding: 0%;
+        height: auto;
+        width: 100%;
     }
     
-    .span-1-of-3 { width: 55%;   }
+    .col {width: 100%; }
+    .span-1-of-3 { width: 80%; }
     
-    .qry { float: right;  overflow: hidden;}
+    .positn { margin-left: 110px;  padding: 0;}
+    
+    .qry { margin-left: 12px;}
 }
-
 
 
 /*----------------------------------------------------------------------*/
@@ -58,15 +54,73 @@
 /*----------------------------------------------------------------------*/
 
 @media only screen and (max-width: 767px) {
+    body { font-size: 18px; }
     
+    section { padding: 30px 0; }
+    
+    .row,
+    .hero-text-box { padding: 0 4%; }
+/*    .hero-text-box { background-color: firebrick;}*/
+    .col { width: 100% }
+    
+    .main-nav { display: none; }
+    
+    h1 { font-size: 200%; }
+    h2{ font-size: 130%; }
+    h3{ font-size: 100%; }
+    
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .name-button {
+        width: 100%;
+        margin: 0;
+        padding:0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .mypic {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .mypic img {
+        height: 400px;
+        width: auto;
+    }
+    
+    .btn-full:link,
+    .btn-full:visited { margin-left: 0; }
+    
+    .btn-more:link,
+    .btn-more:visited { margin-left: 0; }
+    
+    .span-1-of-3 { width: 100%; }
+    
+    .positn { margin: 0 20;  padding: 0 2px;}
+    
+    .qry { margin-left: 1px;}
+    
+    .describe { width: 100% ;}
 }
-
-
 
 
 /*----------------------------------------------------------------------*/
 /*Small Phones: from 0 to 480 px*/
 /*----------------------------------------------------------------------*/
 @media only screen and (max-width: 480px) {
+    section { padding: 25px 0; }
     
+    .footer-nav, 
+.social-links {
+    width: 100%;
+}
+    .social-links {
+    margin-top: 10px;
+        text-align: center;
+}
+
 }
