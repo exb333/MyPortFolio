@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
@@ -17,13 +18,14 @@
     
     <body>
         <header>
-            <nav>
+            <nav >  <!-- class="sticky" , we removed this class because we are using it from js file -->
                 <div class="row">
-                    <a href="#"><img src="resources/img/logo.png" alt="Logo" class="logo" ></a>
+                    <a href="#"><img src="resources/img/logo1.png" alt="Logo" class="logo" ></a>
+                    <a href="#"><img src="resources/img/logo-black.png" alt="Logo" class="logo-black" ></a>
                     <ul class="main-nav">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About </a></li>
-                        <li><a href="#">Projects</a></li>
+                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
@@ -34,18 +36,18 @@
                 <div class="name-button">
                     <h1> Eliezer Borde</h1>
                     <h3>Python/Django Developer</h3>
-                    <a class="btn btn-full" href="#">Resume</a>    
+                    <a class="btn btn-full js--scroll-to-about" href="#">Resume</a>    
                 </div>
                 
-                <div class="mypic">
+                <div class="mypic js--wp-2">
                     <img src="resources/img/headshot.jpg"/>
                 </div>
                             
             </div>
         </header>
         
-        <section class= "section-about">
-            <div class="row">
+        <section class= "section-about js--section-about">
+            <div class="row js--wp-1">
                 <h2>About Me</h2>
                 <p class="long-copy">
                 In the tradition of SICP, this text focuses on methods for abstraction, programming paradigms, and techniques for managing the complexity of large programs. These concepts are illustrated primarily using the Python 3 programming language.
@@ -54,14 +56,14 @@
             </div>
         </section>
         
-        <section class="section-projects">
+        <section class="section-projects" id="projects">
             <div class="row">
                 <h2> Projects </h2>
                 <p class="describe">These are the applications created by me. !</p>
             </div>
             
             <div class="row positn">
-                <div class="col span-1-of-3 box">
+                <div class="col span-1-of-3 box js--wp-3">
                     <a href="#">
                     <figure  class="project-photo qry">
                      <img src="resources/img/data-analyzer-icon.jpg" alt="DataAnalyzer">
@@ -71,7 +73,7 @@
                         </a>
                 </div>
                 
-                <div class="col span-1-of-3 box">
+                <div class="col span-1-of-3 box js--wp-4">
                     <a href="#">
                      <figure  class="project-photo">
                         <img class="project-photo" src="resources/img/qrybots.jpeg" alt="QryBots">
@@ -81,7 +83,7 @@
                          </a>
                 </div>
                 
-                <div class="col span-1-of-3 box">
+                <div class="col span-1-of-3 box js--wp-5">
                     <a href="#">
                      <figure class="project-photo">
                         <img class="project-photo" src="resources/img/real-estate.jpg" alt="Realtor">
@@ -122,6 +124,11 @@
             
         </footer>
             
-    </body>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+         <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
 
+    </body>
+    
+   
 </html>
