@@ -89,4 +89,47 @@ $(document).ready(function() {
         offset: '60%'
     });
     
+    $('.js--wp-6').waypoint(function(direction) {
+        $('.js--wp-6').addClass('animated rubberBand');
+    }, {
+        offset: '60%'
+    });
+    
+
+
+//      MOBILE NAVIGATION
+
+    
+    $('.js--nav-icon').click(function(){
+           var nav = $('.js--main-nav');
+           var icon = $('.js--nav-icon i');
+
+           nav.slideToggle(200);
+           
+           if (icon.hasClass('ion-navicon-round')){
+           icon.addClass('ion-close-round');
+           icon.removeClass('ion-navicon-round');
+           
+       } else {
+           icon.addClass('ion-navicon-round');
+           icon.removeClass('ion-close-round');
+       }   
+       
+      
+    });
+    
+// This piece of code below is helping to make our original navbar visible, when we close the menu on small screen size.
+    
+$(window).resize(function(){
+            var navcontainer = $('.js--main-nav');
+            var width = $(window).width();
+
+            if (width > 767 && navcontainer.is(':hidden')){
+
+                navcontainer.removeAttr('style');
+
+            }
+
+        });
+
 });
