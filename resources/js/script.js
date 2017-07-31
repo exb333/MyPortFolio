@@ -57,6 +57,8 @@ $(document).ready(function() {
               }
             }
           });
+ 
+    
     
 //    Animations on SCROLL
     $('.js--wp-1').waypoint(function(direction) {
