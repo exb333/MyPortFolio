@@ -14,16 +14,41 @@
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <title>ELI|Portfolio</title>
+        
+        <style>
+        
+            .hero-text-box {
+                            position: absolute;
+                            width: 1140px;
+                            top: 50%;
+                            left: 50%;
+                            -webkit-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                            display: block;
+                            text-align: left;
+                        }
+            .pad, .git {padding-top: 60px;}
+            
+            p {color: #fff; line-height: 40px; letter-spacing: 3px; }
+            
+            .mkbig {color: #27ae60;}
+            
+            .ion-ios-telephone, .ion-ios-email, .ion-social-linkedin-outline, .hub { color: #27ae60; font-size: 120%;}
+            
+            .hub:hover { color: #27ae60; }
+        
+        </style>
     </head>
     
     <body>
-        <header>
+        <header class="contact-header">
             <nav >  <!-- class="sticky" , we removed this class because we are using it from js file -->
                 <div class="row">
                     <a href="#"><img src="resources/img/logo1.png" alt="Logo" class="logo" ></a>
                     <a href="#"><img src="resources/img/logo-black.png" alt="Logo" class="logo-black" ></a>
                     <ul class="main-nav js--main-nav">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a class="js--scroll-to-about" href="#">About </a></li>
                         <li><a href="#projects">Projects</a>
                         
@@ -34,76 +59,29 @@
                             </ul>
                         
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
             </nav>
-            
+             <div class="row">
             <div class="hero-text-box">
                
-                <div class="name-button">
-                    <h1> Eliezer Borde</h1>
-                    <h3>Python/Django Developer</h3>
-                    <a class="btn btn-full js--wp-6" href="#">Resume</a>    
-                </div>
-                
-                <div class="mypic js--wp-2">
-                    <img src="resources/img/headshot.jpg"/>
-                </div>
+               
+                    <h1> Please Contact me <span><h3 class="mkbig">&#64;</h3></span> </h1>
+                    <p class="pad"><i class="ion-ios-telephone"></i>  Phone &mdash; &#40;862&#41;&mdash;244&mdash;5556</p>   
+                    <p><i class="ion-ios-email"></i>  Email &mdash; exb333&#64;gmail.com</p>   
+                    <p><i class="ion-social-linkedin-outline"></i>  linkedIn &mdash; exb333&#64;gmail.com</p>   
+                    <p class="git"> Please check out my code for the projects<br> I have worked on GitHub&#58;</p>
+                    <p> <i class="ion-social-github hub"></i> &mdash; DataAnalyzer </p>
+                    <p> <i class="ion-social-github hub"></i> &mdash; QryBots </p>
+                    <p> <i class="ion-social-github hub"></i> &mdash; Realtor </p>
                             
+            </div>
             </div>
         </header>
         
-        <section class= "section-about js--section-about">
-            <div class="row js--wp-1">
-                <h2>About Me</h2>
-                <p class="long-copy">
-                In the tradition of SICP, this text focuses on methods for abstraction, programming paradigms, and techniques for managing the complexity of large programs. These concepts are illustrated primarily using the Python 3 programming language.
-                </p>
-                <a class="btn-more" href="about.html">More &raquo;</a>
-            </div>
-        </section>
-        
-        <section class="section-projects" id="projects">
-            <div class="row">
-                <h2> Projects </h2>
-                <p class="describe">These are the applications created by me. !</p>
-            </div>
-            
-            <div class="row positn">
-                <div class="col span-1-of-3 box js--wp-3">
-                    <a href="dataAnalyzer.html">
-                    <figure  class="project-photo qry">
-                     <img src="resources/img/data-analyzer-icon.jpg" alt="DataAnalyzer">
-                    </figure>
-                   
-                    <p>Data &mdash; Analyzer</p>
-                        </a>
-                </div>
-                
-                <div class="col span-1-of-3 box js--wp-4">
-                    <a href="#">
-                     <figure  class="project-photo">
-                        <img class="project-photo" src="resources/img/qrybots.jpeg" alt="QryBots">
-                    </figure>
-            
-                    <p>QryBots</p>
-                         </a>
-                </div>
-                
-                <div class="col span-1-of-3 box js--wp-5">
-                    <a href="#">
-                     <figure class="project-photo">
-                        <img class="project-photo" src="resources/img/real-estate.jpg" alt="Realtor">
-                    </figure  >
-                    
-                    <p>Realtor</p>
-                         </a>
-                </div>
-            </div>
-        </section>
-        
+       
         <footer>
             
             <div class="row">

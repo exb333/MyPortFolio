@@ -96,6 +96,7 @@ header {
     width: 960px;
     top: 50%;
     left: 72%;
+    background-color: chocolate;
 /*
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);

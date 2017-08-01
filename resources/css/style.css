@@ -148,6 +148,13 @@ header {
     height: 100vh;
 }
 
+.contact-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.60) ), url(img/contact-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
 .hero-text-box {
     position: absolute;
     width: 1140px;
