@@ -7,11 +7,15 @@
     width: 100%;
     padding: 0 2%;
 }
-
+.name-button { width:50%; }
     .row, .mypic {  padding: 0 2%;  }
 
 }
 
+@media only screen and (max-width: 1028px) {
+.name-button { width:25%; }
+
+}
 
 /*----------------------------------------------------------------------*/
 /* IPad and Portrait mode, Small tablet to Big Tablet: from 768px to 1023px; */
