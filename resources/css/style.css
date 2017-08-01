@@ -217,6 +217,33 @@ header {
   border-bottom: 2px solid #27ae60;
 }
 
+.dropdown {
+    width: 8%;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: -1;
+    opacity:0;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    background: #2e2728;
+}
+
+.dropdown li {
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown li a {
+    padding: 10px 30px;
+    display: block;
+}
+
+.main-nav li:hover .dropdown {
+    z-index: 1;
+    opacity:1;
+}
+
+
 /*----------------------------------------------------------------*/
 /*       MOBILE NAVIGATION           */
 /*----------------------------------------------------------------*/
@@ -261,6 +288,10 @@ header {
 
 .sticky .logo-black {
     display: block;
+}
+
+.sticky .dropdown {
+    background: rgba(193, 184, 186, 0.83);
 }
 
 
