@@ -32,13 +32,51 @@ body{
     margin: 0 auto;
 }
 
-.row-nav {
-    max-width: auto;
-    margin: 0 auto;
+section {
+    height: 100vh;
+    padding: 80px 0;
 }
 
-section {
-    padding: 80px 0;
+.section-about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.40) ),url(resources/css/img/about.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-projects {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.60) ),url(resources/css/img/projects-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-contact {
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.60) ), url(resources/css/img/contact-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-skills {
+    height: 118vh;
+     background-color:rgba(85, 85, 85, 0.35);
+}
+
+
+/*----------------------------------------------------------------*/
+/*        PARAGRAPHS           */
+/*----------------------------------------------------------------*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 50%;
+    color: #fff;
+}
+
+.describe {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
 }
 
 
@@ -62,7 +100,8 @@ h1 {
 }
 
 h2 {
-    color: #343434;
+/*    color: #343434;*/
+    color: #fff;
     font-size: 150%;
     text-align: center;
     margin-bottom: 30px;
@@ -86,27 +125,74 @@ h2:after {
 
 
 /*----------------------------------------------------------------*/
+/*         BUTTONS               */
+/*----------------------------------------------------------------*/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 90%;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color:  #27ae60;
+    border: 1px solid #27ae60;
+    border-radius: 200px;
+    margin-left: 30%;
+}
+
+.btn-full:hover, 
+.btn-full:active {
+     background-color: #229652;
+     border: 1px solid #229652;
+}
+
+.btn-more:link,
+.btn-more:visited {
+    color: #27ae60;
+    margin-left: 15%;
+    transition: background-color 0.8s, border 0.8s, color 0.8s;
+}
+
+.btn-more:hover, 
+.btn-more:active {
+     background-color: #229652;
+     border: 1px solid #229652;
+    color: #fff;
+}
+
+/*----------------------------------------------------------------*/
 /*         HEADER               */
 /*----------------------------------------------------------------*/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.40) ), url(img/about.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.40) ), url(resources/css/img/hero1.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
-.hero-text-box1 {
+.contact-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.60) ), url(img/contact-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
     position: absolute;
-    width: 800px;
-    top: 15%;
+    width: 1140px;
+    top: 60%;
     left: 50%;
-    background-color: chocolate;
-/*
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-*/
     display: block;
 }
 
@@ -119,7 +205,7 @@ header {
     width: auto;
     float: left;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: -50px;
 }
 
 .logo-black {
@@ -144,7 +230,6 @@ header {
     float: right;
     list-style: none;
     margin-top: 55px;
-    margin-right: 50px;
 }
 
 .main-nav li {
@@ -168,6 +253,33 @@ header {
 .main-nav li a:active {
   border-bottom: 2px solid #27ae60;
 }
+
+.dropdown {
+    width: 8%;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: -1;
+    opacity:0;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    background: #2e2728;
+}
+
+.dropdown li {
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown li a {
+    padding: 10px 30px;
+    display: block;
+}
+
+.main-nav li:hover .dropdown {
+    z-index: 1;
+    opacity:1;
+}
+
 
 /*----------------------------------------------------------------*/
 /*       MOBILE NAVIGATION           */
@@ -215,6 +327,31 @@ header {
     display: block;
 }
 
+.sticky .dropdown {
+    background: rgba(193, 184, 186, 0.83);
+}
+
+
+/*----------------------------------------------------------------*/
+/*        CONTENT IN HERO               */
+/*----------------------------------------------------------------*/
+
+.name-button {
+    float: left;
+    margin-top: 150px;
+}
+
+.mypic {
+    float: right;
+   height: auto;
+    width: auto;
+}
+
+.mypic img{
+    height: 70%;
+    width: auto;
+}
+
 
 /*----------------------------------------------------------------*/
 /*        WORK              */
@@ -230,16 +367,18 @@ header {
     border-left: 1px solid #fff;
     border-bottom: 1px solid #fff;
     background-color: #27ae60;
+    
 }
 
-.work th:first-child {
+.work th:first-child,
+.work td:first-child {
     border-left: none;
 }
 
 .work td {
     font-size: 120%;
     text-align: center;
-   
+    border-left: 1px solid #fff;
 }
 
 .work tr {
@@ -248,28 +387,87 @@ header {
 
 .work th, td {
     padding: 15px;
-}
-
-/*----------------------------------------------------------------*/
-/*        CONTENT IN HERO               */
-/*----------------------------------------------------------------*/
-
-.name-button {
-    float: left;
-/*    background-color: rgba(85, 85, 85, 0.46);*/
-    margin-top: 20px;
-/*    padding: 20px;*/
-}
-
-.name-button h2 {
     text-align: center;
-    color: #d0d0cb;
 }
 
-.name-button p {
-    color: #d0d0cb;
-    font-size: 90%;
+
+/*----------------------------------------------------------------*/
+/*        PROJECT  SECTION           */
+/*----------------------------------------------------------------*/
+
+.section-projects {
+    padding: 0px;
 }
+
+.box {
+    text-align: center;
+}
+
+.box a:link, 
+.box a:visited {
+    text-decoration: none;
+    color: #343434;
+    transition: color 0.3s;
+}
+
+.box a:hover, 
+.box a:active {
+    color: #27ae60;
+    font-weight: 500;
+}
+
+.box p {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.box  img{
+    opacity: 0.7;
+   height: auto;
+    width: 100%;
+    transition: transform 0.7s, opacity 0.7s;
+}
+
+.project-photo {
+    height: auto;
+    margin:0;
+    overflow: hidden;
+    background-color: #000;
+    box-shadow: 10px 10px 5px #888888
+}
+
+.box img:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.git, .pad {padding-top: 60px;}
+
+.git p {
+    line-height: 50px;
+}
+
+.git a:link,  
+.git a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+.git a:hover,  
+.git a:active{
+    text-decoration: none;
+    color: #27ae60;
+}
+
+/*// Needed because the carousel overrides the position property*/
+.modal.and.carousel {
+  position: fixed; 
+}
+
+.hght { padding-top: 80px;}
 
 /*----------------------------------------------------------------*/
 /*        EDUCATION           */
@@ -280,14 +478,16 @@ header {
 }
 
 .box1 {
-    height: 300px;
+    height: 230px;
     border-bottom: 2px solid #555;
+    padding-bottom: -50px;
 
 }
 
 .box1 p {
     line-height: 35px;
     font-weight: 500;
+    font-size: 90%;
 }
 
 
@@ -300,6 +500,27 @@ header {
 #myChart {
     margin-top: 50px;
 }
+
+
+
+
+            
+/*p {color: #fff; line-height: 40px; letter-spacing: 3px; }*/
+
+/*----------------------------------------------------------------*/
+/*        CONTACT           */
+/*----------------------------------------------------------------*/
+
+.mkbig {color: #27ae60;}
+
+.ion-ios-telephone, .ion-ios-email, .ion-social-linkedin-outline, .hub { color: #27ae60; font-size: 120%;}
+
+.para-color {
+    color: #fff;
+    line-height: 40px; 
+    letter-spacing: 3px; 
+}
+
 
 /*----------------------------------------------------------------*/
 /*        FOOTER           */
@@ -376,4 +597,37 @@ footer p {
     text-align: center;
 /*    font-size: 60%;*/
     margin-top: 20px;
+}
+
+
+/*----------------------------------------------------------------*/
+/*        ANIMATIONS           */
+/*----------------------------------------------------------------*/
+
+.js--wp-1 {
+    opacity: 0;
+}
+
+.js--wp-1.animated {
+    opacity: 1;
+}
+
+.js--wp-3, 
+.js--wp-4, 
+.js--wp-5,
+{
+    animation-duration: 1s;
+}
+
+.js--wp-6 {
+    animation-duration: 2s;
+}
+
+.js--wp-7, .js--wp-8 {
+    opacity: 0;
+}
+
+.js--wp-7.animated, 
+.js--wp-8.animated {
+    opacity: 1;
 }

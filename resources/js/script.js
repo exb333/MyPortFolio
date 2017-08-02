@@ -97,6 +97,18 @@ $(document).ready(function() {
         offset: '60%'
     });
     
+    $('.js--wp-7').waypoint(function(direction) {
+        $('.js--wp-7').addClass('animated fadeIn');
+    }, {
+        offset: '60%'
+    });
+    
+    $('.js--wp-8').waypoint(function(direction) {
+        $('.js--wp-8').addClass('animated fadeIn');
+    }, {
+        offset: '60%'
+    });
+    
 
 
 //      MOBILE NAVIGATION

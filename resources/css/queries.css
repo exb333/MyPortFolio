@@ -2,8 +2,27 @@
 /* Big Tablets to 1200px (widths smaller than the 1140px row); */
 /*----------------------------------------------------------------------*/
 
+@media only screen and (max-width: 1574px) {
+
+    section { padding: 50px 0px;}    
+    .section-exp { font-size: 80%;}
+    .hght { padding-top: 20px;}
+    .git, .pad {padding-top: 30px;}
+    .section-edu { height: 120vh; }
+    .section-skills { height: 140vh;}
+    .hello { margin-left: 80px;}
+    .dropdown { width: 10%; }
+    
+.long-copy { font-size: 80%; width: 60%; }
+
+}
+
 @media only screen and (max-width: 1200px) {
     .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+}
+    .hero-text-box1 {
     width: 100%;
     padding: 0 2%;
 }
@@ -12,10 +31,6 @@
 
 }
 
-@media only screen and (max-width: 1028px) {
-.name-button { width:25%; }
-
-}
 
 /*----------------------------------------------------------------------*/
 /* IPad and Portrait mode, Small tablet to Big Tablet: from 768px to 1023px; */
