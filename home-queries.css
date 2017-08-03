@@ -1,0 +1,171 @@
+/*
+320px
+480px
+600px
+768px
+900px
+1024px
+1200px*/
+
+@media screen and (max-width: 1600px) {
+    body { font-size: 20px;}
+    .long-copy, .myname { margin-left: 35%;} 
+    .section-edu { height: 100vh;}
+    .section-skills {height: 130vh;}
+    .box1 { height: 140px;  padding-top: 20px;}
+    .box1 img { margin: 0px 150px;}
+    
+    
+}
+
+@media screen and (max-width: 1200px) {
+    body { font-size: 80%; }
+    
+    .long-copy, .myname { margin-left: 30%;} 
+
+.long-copy { line-height: 30px; }
+
+.box1 { height: 140px;  padding-top: 20px;}
+
+.box1 img { margin: 0px 150px;}
+
+.name-button {margin-left: 150px;}
+
+.section-skills {height: 120vh;}
+
+.dropdown { width: 45%;}
+    
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .row{ padding: 0 2%;}
+    .hero-text-box{padding-right: 10%;}
+    .mypic img {
+        height: 60%; 
+        width: auto;
+    }
+    
+    
+}
+
+@media screen and (max-width: 900px) {
+      
+      .row{ padding: 0 3%;}
+     .hero-text-box{padding-right: 18%;}
+    .box1 { height: 160px;  padding: 20px 0;}
+    
+    .box1 p { line-height: 20px;}
+    
+    .work {font-size: 70%;}
+}
+
+
+@media screen and (max-width: 768px) {
+     body { font-size: 17px; }
+    .row{ padding: 0 4%;}
+    .name-button{ width: 100%; margin-top: -3%; margin-bottom: 5%; margin-left: 8%; text-align: center}
+    .mypic {width: 100%; float:left; margin-left: 40%;}
+    .mypic img { height: 50%; width:auto; }
+    
+    .long-copy { line-height: 27px; }
+    
+    
+    .btn-full:link, .btn-full:visited { margin-left: 0%; }
+    
+    .main-nav { display: none; }
+    
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+    
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 10px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 5px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav {
+        margin-top: 10px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+         padding: 10px 0;
+        color: #555;
+     }
+    
+    .sticky .mobile-nav-icon {margin-top: 10px;}
+    .sticky .mobile-nav-icon i {
+        color: #555;
+    }
+    
+    
+}
+
+@media screen and (max-width: 600px) {
+    .row{ padding: 0 4%;}
+    .long-copy { line-height: 25px; width: 100%; margin-left: 0%;}
+    .myname { margin-left: 20%;}
+    
+    .box1 { height: 100px; width: 100%; border-bottom: none;  padding: 10px 0;}
+    
+    
+    .box1 p:last-child { border-bottom: 2px solid #555; margin-bottom: 40px;}
+    
+    .work {font-size: 60%;}
+    
+    .section-edu { height: 105vh; }
+    
+     .section-skills { height: 100vh; }
+    
+    .section-contact {
+        height: 50vh;}
+    
+    .col {width:100%;}
+    
+    .positn { padding:4%;}
+    
+    .qry { margin-left: 12px;}
+    
+    .section-projects { height: 190vh;}
+    
+    .section-projects figure { box-shadow: none; }
+    
+    .git, .pad {padding-top: 5%;}
+}
+
+@media screen and (max-width: 480px) {
+    body {font-size: 15px;}
+    .row{ padding: 0 5%;}
+    .name-button{ width: 100%; margin-top: -3%; margin-bottom: 5%; margin-left: 5%; text-align: center}
+    
+    .section-projects { height: 160vh;}
+    
+    .section-skills { height: 80vh; }
+    .mypic img { height: 40%; width:auto; }
+
+.mypic {margin-left: 41%;}
+}
+
+@media screen and (max-width: 349px) {
+    body {font-size: 13px;}
+    .myname { margin-left: 10%;}
+    .long-copy { line-height: 20px}
+    .btn:link,
+    .btn:visited {font-size: 14px;}
+    .name-button { margin-right: 7%; font-size: 10px;}
+    
+}

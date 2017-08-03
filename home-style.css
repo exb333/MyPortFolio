@@ -61,6 +61,8 @@ section {
      background-color:rgba(85, 85, 85, 0.35);
 }
 
+.section-edu { height: 100vh; }
+
 
 /*----------------------------------------------------------------*/
 /*        PARAGRAPHS           */
@@ -327,9 +329,13 @@ header {
     display: block;
 }
 
-.sticky .dropdown {
+.sticky .main-nav li:hover .dropdown {
+     z-index: 1;
+    opacity:1;
     background: rgba(193, 184, 186, 0.83);
 }
+
+
 
 
 /*----------------------------------------------------------------*/
@@ -351,6 +357,8 @@ header {
     height: 70%;
     width: auto;
 }
+
+.myname { margin-left: 50%; }
 
 
 /*----------------------------------------------------------------*/
@@ -390,6 +398,9 @@ header {
     text-align: center;
 }
 
+.table2 { margin-top: 40px;}
+
+.exp-content { padding: 30px 0px;}
 
 /*----------------------------------------------------------------*/
 /*        PROJECT  SECTION           */
@@ -502,6 +513,18 @@ header {
 }
 
 
+/*----------------------------------------------------------------*/
+/*        Skills           */
+/*----------------------------------------------------------------*/
+
+
+.section-skills h2 {
+/*    margin-top: -60px;*/
+}
+
+.skill-table td {
+    border-bottom: 1px solid #fff;
+}
 
 
             
