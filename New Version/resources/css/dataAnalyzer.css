@@ -1,0 +1,30 @@
+
+/* Slideshow container */
+
+.container {
+    height: 100vh;
+    padding-top: 150px;
+}
+
+header {
+    height: 140vh;
+    background-image: none;
+}
+.pros {background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.60) ), url(img/projects-img.jpg);}
+
+.carousel-caption {
+    position:relative;
+    left: 0;
+   
+}
+
+.item {
+    display: block;
+}
+
+.item img {
+    height: 100px;
+    width: 400px;
+}
+
+.top-head {color: #fff;}

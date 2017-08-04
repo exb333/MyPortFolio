@@ -1,0 +1,183 @@
+/*----------------------------------------------------------------------*/
+/* Big Tablets to 1200px (widths smaller than the 1140px row); */
+/*----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1574px) {
+
+    section { padding: 50px 0px;}    
+    .section-exp { font-size: 80%;}
+    .hght { padding-top: 20px;}
+    .git, .pad {padding-top: 30px;}
+    .section-edu { height: 120vh; }
+    .section-skills { height: 140vh;}
+    .hello { margin-left: 80px;}
+    .dropdown { width: 10%; }
+    
+.long-copy { font-size: 90%; width: 60%; }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+}
+    .hero-text-box1 {
+    width: 100%;
+    padding: 0 2%;
+}
+.name-button { width:50%; }
+    .row, .mypic {  padding: 0 2%;  }
+
+}
+
+
+/*----------------------------------------------------------------------*/
+/* IPad and Portrait mode, Small tablet to Big Tablet: from 768px to 1023px; */
+/*----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1023px) {
+    body {  font-size: 20px;  }
+    section { padding: 60px 0; }
+    .name-button { width:25%; }
+    .btn-full:link, .btn-full:visited {    margin-left: 10%; }
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .btn-more:link, .btn-more:visited { 
+        margin-left: 10%;
+    }
+    
+    .box p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .project-photo {
+        height: auto;
+        width: 100%;
+    }
+    
+    .col {width: 100%; }
+    .span-1-of-3 { width: 80%; }
+    
+    .positn { margin-left: 110px;  padding: 0;}
+    
+    .qry { margin-left: 12px;}
+}
+
+
+/*----------------------------------------------------------------------*/
+/* Devices smaller than IPad - Small phones to Small Tablets: from 481 to 767 px */
+/*----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+    body { font-size: 18px; }
+    
+    section { padding: 30px 0; }
+    
+    .row,
+    .hero-text-box { padding: 0 4%; }
+/*    .hero-text-box { background-color: firebrick;}*/
+    .col { width: 100% }
+    
+    .main-nav { display: none; }
+    
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+    
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 10px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 5px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav {
+        margin-top: 10px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+         padding: 10px 0;
+        color: #555;
+     }
+    
+    .sticky .mobile-nav-icon {margin-top: 10px;}
+    .sticky .mobile-nav-icon i {
+        color: #555;
+    }
+    
+    h1 { font-size: 200%; }
+    h2{ font-size: 130%; }
+    h3{ font-size: 100%; }
+    
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .name-button {
+        width: 100%;
+        margin: 0;
+        padding:0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .mypic {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .mypic img {
+        height: 400px;
+        width: auto;
+    }
+    
+    .btn-full:link,
+    .btn-full:visited { margin-left: 0; }
+    
+    .btn-more:link,
+    .btn-more:visited { margin-left: 0; }
+    
+    .span-1-of-3 { width: 100%; }
+    
+    .positn { margin: 0 20;  padding: 0 2px;}
+    
+    .qry { margin-left: 1px;}
+    
+    .describe { width: 100% ;}
+}
+
+
+/*----------------------------------------------------------------------*/
+/*Small Phones: from 0 to 480 px*/
+/*----------------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+    
+    section { padding: 25px 0; }
+    
+    .footer-nav, 
+.social-links {
+    width: 100%;
+}
+    .social-links {
+    margin-top: 10px;
+        text-align: center;
+}
+
+}
